@@ -1,0 +1,22 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+ {% block content %}
+<div class="license">
+    {{ flatpage.content }}
+</div>
+<style>
+    .license {
+        background-color: black;
+    }
+    .license {
+        font-family: Arial, serif;
+        color: white;
+        text-weight: bold;
+        font-size: 44px;
+        padding: 10px;
+    }
+</style>
+{% endblock content %}
